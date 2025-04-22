@@ -1,8 +1,16 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
   reactStrictMode: true,
+  experimental: {},
+  onDemandEntries: {
+    pagesBufferLength: 1,
+  },
+  devIndicators: {
+    autoPrerender: false,
+  },
+  webpack(config: { optimization: { runtimeChunk: boolean; }; }) {
+    config.optimization.runtimeChunk = false; // reduce reload pressure
+    return config;
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
