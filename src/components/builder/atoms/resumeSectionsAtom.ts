@@ -30,7 +30,7 @@ export const resumeSectionsAtom = atom<ResumeSection[]>([
         company: "",
         location: "",
         content:
-          "Driven Computer Science and Business student passionate about AI, full-stack development, and impactful innovation. Experienced in building scalable web applications and integrating AI solutions. Recognized for strong leadership, technical skills, and delivering results in collaborative team settings.",
+          "Versatile and results-oriented professional with a passion for technology, innovation, and continuous learning. Skilled in collaborating across teams to build impactful solutions and deliver user-centric applications.",
         timestamps: { from: "", to: "" },
         prompt: "",
         response: "",
@@ -44,33 +44,22 @@ export const resumeSectionsAtom = atom<ResumeSection[]>([
     entries: [
       {
         id: uuidv4(),
-        position: "Program Activator",
-        company: "ASU Changemaker Central",
-        location: "Arizona State University",
-        content: `• Led planning and execution of service and entrepreneurship initiatives for 50+ students weekly.\n• Coordinated university-wide events promoting community engagement and social impact.`,
-        timestamps: { from: "09/2023", to: "Present" },
+        position: "Marketing Intern",
+        company: "InnovateX Solutions",
+        location: "New York, NY",
+        content: `• Assisted in planning and promoting company events and campaigns.\n• Conducted market research and presented findings to senior leadership.`,
+        timestamps: { from: "06/2023", to: "08/2023" },
         prompt: "",
         response: "",
         showPrompt: false,
       },
       {
         id: uuidv4(),
-        position: "AI/ML Engineer Intern",
-        company: "Attri",
+        position: "Software Developer Intern",
+        company: "NextGen Tech",
         location: "Remote",
-        content: `• Implemented GPT-based knowledge assistant with LangChain, Faiss, and OpenAI API.\n• Fine-tuned prompts and built RAG pipelines for enterprise data.\n• Collaborated with full-stack and data teams to ship production-ready AI tools.`,
-        timestamps: { from: "05/2024", to: "10/2024" },
-        prompt: "",
-        response: "",
-        showPrompt: false,
-      },
-      {
-        id: uuidv4(),
-        position: "Full-Stack Developer Intern",
-        company: "Attri",
-        location: "Remote",
-        content: `• Built modular dashboards in React + Express for internal analytics.\n• Developed authentication flows with OAuth2 and integrated third-party APIs.\n• Led migration from REST to GraphQL improving data fetch times by 35%.`,
-        timestamps: { from: "05/2023", to: "01/2024" },
+        content: `• Collaborated on full-stack web development projects using modern frameworks.\n• Contributed to API integration and unit testing for product features.`,
+        timestamps: { from: "01/2024", to: "04/2024" },
         prompt: "",
         response: "",
         showPrompt: false,
@@ -83,12 +72,12 @@ export const resumeSectionsAtom = atom<ResumeSection[]>([
     entries: [
       {
         id: uuidv4(),
-        position: "B.S. Computer Science (with Business)",
-        company: "Arizona State University",
-        location: "Tempe, AZ",
+        position: "B.S. in Information Technology",
+        company: "State University",
+        location: "City, State",
         content:
-          "• NAmU Scholar (10,000/year)\n• Dean’s List (Fall 2022, Spring 2023)",
-        timestamps: { from: "08/2022", to: "05/2026" },
+          "• GPA: 3.8/4.0\n• President of the Tech Club\n• Completed coursework in Data Structures, AI, and Database Systems",
+        timestamps: { from: "08/2021", to: "05/2025" },
         prompt: "",
         response: "",
         showPrompt: false,
@@ -101,24 +90,24 @@ export const resumeSectionsAtom = atom<ResumeSection[]>([
     entries: [
       {
         id: uuidv4(),
-        position: "SunDevil Book Exchange",
-        company: "Arizona State University",
-        location: "Tempe, AZ",
+        position: "E-Commerce Platform",
+        company: "Capstone Project",
+        location: "State University",
         content:
-          "• Developed a book buying/selling system using JavaFX and MVC pattern.\n• Implemented unit testing with JUnit; containerized with Docker.\n• Managed user roles, data validation, and file storage.",
-        timestamps: { from: "11/2023", to: "12/2023" },
+          "• Built a full-stack shopping platform with secure user login and payment integration.\n• Designed product listing and inventory system with admin dashboard.",
+        timestamps: { from: "09/2023", to: "12/2023" },
         prompt: "",
         response: "",
         showPrompt: false,
       },
       {
         id: uuidv4(),
-        position: "AI Resume Enhancer",
-        company: "Arizona State University",
-        location: "Tempe, AZ",
+        position: "Chatbot Assistant",
+        company: "Independent Project",
+        location: "Remote",
         content:
-          "• Built a resume analysis tool using GPT-4 and LangChain.\n• Enabled context-aware bullet generation from job descriptions.\n• Deployed on Render using CI/CD with GitHub Actions.",
-        timestamps: { from: "01/2024", to: "03/2024" },
+          "• Developed a chatbot using NLP libraries for basic Q&A interactions.\n• Integrated deployment with cloud hosting and continuous updates.",
+        timestamps: { from: "02/2024", to: "04/2024" },
         prompt: "",
         response: "",
         showPrompt: false,
@@ -135,7 +124,7 @@ export const resumeSectionsAtom = atom<ResumeSection[]>([
         company: "",
         location: "",
         content:
-          "Languages: Python, Java, TypeScript\nFrameworks: React, Node.js, Express, Flask\nAI/ML: OpenAI API, LangChain, Faiss, RAG\nDevOps: GitHub Actions, Docker, Render\nOther: SQL, Firebase, OAuth2, RxJS, Agile, JIRA",
+          "Languages: JavaScript, Python, Java\nFrameworks: React, Express, Spring Boot\nTools: Git, Docker, Postman\nOther: SQL, REST APIs, Agile, GitHub Actions",
         timestamps: { from: "", to: "" },
         prompt: "",
         response: "",
@@ -144,29 +133,3 @@ export const resumeSectionsAtom = atom<ResumeSection[]>([
     ],
   },
 ]);
-
-
-// atoms/resumeSectionsAtom.ts
-// import { atomWithStorage } from "jotai/utils";
-// import { ResumeSection } from "@/types/resume";
-// import { v4 as uuidv4 } from "uuid";
-
-// export const resumeSectionsAtom = atomWithStorage<ResumeSection[]>("resumeData", [
-//   {
-//     id: uuidv4(),
-//     heading: "Summary",
-//     entries: [
-//       {
-//         id: uuidv4(),
-//         position: "",
-//         company: "",
-//         location: "",
-//         content: "Motivated and detail-oriented individual...",
-//         timestamps: { from: "", to: "" },
-//         prompt: "",
-//         response: "",
-//         showPrompt: false,
-//       },
-//     ],
-//   },
-// ]);
